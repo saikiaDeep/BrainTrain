@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     ConstraintLayout constraintLayout;
     int tag=1;
     int upCounter=0;
-    int downCounter=1;
+    int downCounter=0;
     int result=0;
     int rand_1=0;
     int rand_2=0;
@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
     {
         Random rand = new Random();
         int rand_box= rand.nextInt(4)+1;
-        Log.i("button 1",Integer.toString(rand_box));
+        tag=rand_box;
         if(Integer.toString(tag).equals(gb1.getTag().toString()))
         {
             gb1.setText(Integer.toString(storeResult));
@@ -248,7 +248,7 @@ public class MainActivity extends AppCompatActivity {
                 timerTV.setText("30s");
                 String result="Your Score: "+counterTV.getText().toString();
                 resultFinalTV.setText(result);
-                String counter=0+"/"+1;
+                String counter=0+"/"+0;
                 upCounter=0;
                 downCounter=1;
                 counterTV.setText(counter);
