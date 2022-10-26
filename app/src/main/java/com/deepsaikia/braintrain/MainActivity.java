@@ -69,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
                    //successful
                    resultTV.setText("CORRECT :-)");
                    upCounter++;
-                   String show= upCounter +"/"+ ++downCounter;
+                   downCounter++;
+                   String show= upCounter +"/"+ downCounter;
                    counterTV.setText(show);
 
                }
@@ -93,7 +94,8 @@ public class MainActivity extends AppCompatActivity {
                     //successful
                     resultTV.setText("CORRECT :-)");
                     upCounter++;
-                    String show= upCounter +"/"+ ++downCounter;
+                    downCounter++;
+                    String show= upCounter +"/"+ downCounter;
                     counterTV.setText(show);
 
                 }
@@ -117,7 +119,8 @@ public class MainActivity extends AppCompatActivity {
                     //successful
                     resultTV.setText("CORRECT :-)");
                     upCounter++;
-                    String show= upCounter +"/"+ ++downCounter;
+                    downCounter++;
+                    String show= upCounter +"/"+ downCounter;
                     counterTV.setText(show);
 
                 }
@@ -141,7 +144,8 @@ public class MainActivity extends AppCompatActivity {
                     //successful
                     resultTV.setText("CORRECT :-)");
                     upCounter++;
-                    String show= upCounter +"/"+ ++downCounter;
+                    downCounter++;
+                    String show= upCounter +"/"+ downCounter;
                     counterTV.setText(show);
 
                 }
@@ -250,7 +254,7 @@ public class MainActivity extends AppCompatActivity {
                 resultFinalTV.setText(result);
                 String counter=0+"/"+0;
                 upCounter=0;
-                downCounter=1;
+                downCounter=0;
                 counterTV.setText(counter);
                 mainStart.setVisibility(View.VISIBLE);
 
